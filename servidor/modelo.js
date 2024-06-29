@@ -15,13 +15,14 @@ function Sistema() {
     this.cad = new cad.CAD();
 
     // Verifica si un usuario está activo
-    this.usuarioActivo = function (nick) {
-        if (nick in this.usuarios) {
-            return { "activo": true };
-        } else {
-            return { "activo": false };
-        }
-    }
+    this.usuarioActivo = function (email) {
+      if (email in this.usuarios) {
+          return { "activo": true };
+      } else {
+          return { "activo": false };
+      }
+  }
+  
 
     // Conectar a la base de datos
     this.cad.conectar(function (db) {
