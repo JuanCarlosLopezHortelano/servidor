@@ -51,7 +51,7 @@ const sistema = new modelo.Sistema();
 
 
 app.use(cors({
-    origin:"http://localhost:3000"
+    origin:"http://procesossoft-yhkqrakm7q-ew.a.run.app"
    }));
    
 
