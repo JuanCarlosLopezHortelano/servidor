@@ -46,6 +46,8 @@ function Sistema() {
         return this.usuarios;
     }
 
+    
+
    // Elimina un usuario del sistema
    this.eliminarUsuario = function (email) {
     if (this.usuarios.hasOwnProperty(email)) {
