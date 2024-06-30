@@ -2,8 +2,8 @@ const nodemailer = require('nodemailer');
 const gv = require('./gestorVariables.js');
 
 // URL de tu aplicación, puede ser local o la URL de despliegue
-//const url = "http://localhost:3000/";
- const url = "https://procesossoft-yhkqrakm7q-ew.a.run.app/"; 
+const url = "http://localhost:3001/";
+ //const url = "https://procesossoft-yhkqrakm7q-ew.a.run.app/"; 
 
 
 let options = {

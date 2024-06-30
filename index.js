@@ -51,9 +51,9 @@ const sistema = new modelo.Sistema();
 
 
 app.use(cors({
-    origin:"http://procesossoft-yhkqrakm7q-ew.a.run.app"
+    origin:"http://localhost:3000"
    }));
-   
+    
 
 app.get("/agregarUsuario/:nick", function(request, response) {
     let nick = request.params.nick;
@@ -109,7 +109,7 @@ app.get("/confirmarUsuario/:email/:key",function(request,response){
     if (usr.email!=-1){
     response.cookie('nick',usr.email);
     }
-    response.redirect('/');
+    response.redirect('http://localhost:3000');
     });
     })
     
